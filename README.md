@@ -20,6 +20,8 @@ Using LangGraph, I designed a clear and controlled stateful workflow:<br>
 🔹 create_blog → writes detailed content based on the outline<br>
 🔹 evaluate_blog → scores the quality of the blog (0–10)<br>
 
+![image alt](https://github.com/Narendra8767/AI-Blog-Generator/blob/cad6ec264e1889cfeec1e8d785e022920d4db840/image/workflow.png)
+
 LangGraph handles these stages using nodes (functions) and edges (execution order) to form a Directed Acyclic Graph (DAG). This makes the entire flow modular, explainable, and maintainable.<br>
 
 📚 Learning Outcomes:<br>
@@ -27,7 +29,6 @@ LangGraph handles these stages using nodes (functions) and edges (execution orde
 ✅ Learned to build and connect nodes, and direct the flow using edges (START → Outline → Blog → Evaluation → END).<br>
 ✅ Gained clarity on understanding and designing sequential workflows, which is key when orchestrating step-by-step AI pipelines.<br>
 ✅ Learned how to separate logic into clean, traceable units — essential for building scalable and maintainable agentic AI workflows.<br>
-
 
 🧠 Why LangGraph?<br>
 LangGraph offers a powerful way to design AI workflows as graph-based systems, where each step (node) performs a specific task and flows are explicitly defined.<br>
