@@ -8,7 +8,7 @@ Given a topic like "How AI is Transforming Healthcare", the app:<br>
 🟦 Produces a detailed blog post based on the outline<br>
 🟦 Assigns a quality score (0–10) using LLM-based evaluation<br>
 
-
+![image alt](https://github.com/Narendra8767/AI-Blog-Generator/blob/731086812d25bfbfed83a744282427b78010414f/image/AI%20blog%20full%20screen%20image.png)
 
 Tech Stack: LangGraph + LangChain + Flask + OpenAI + Python<br>
 
