@@ -34,7 +34,7 @@ def create_blog(state: BlogState) -> BlogState:
     state['content'] = content
     return state
 
-def evaluate_blog_content(state: BlogState) -> BlogState:  # Renamed this function
+def evaluate_blog_content(state: BlogState) -> BlogState:  
     title = state['title']
     content = state['content']
     prompt = f"Evaluate ONLY the quality of this blog content and return JUST a single number between 0-10: Title:{title},Content:{content}"
@@ -43,12 +43,12 @@ def evaluate_blog_content(state: BlogState) -> BlogState:  # Renamed this functi
     state['evaluation'] = evaluation
     return state
 
-# Build the workflow graph
+
 graph = StateGraph(BlogState)
 
 graph.add_node('create_outline', create_outline)
 graph.add_node('create_blog', create_blog)
-graph.add_node('evaluate_blog', evaluate_blog_content)  # Updated to use renamed function
+graph.add_node('evaluate_blog', evaluate_blog_content)  
 
 graph.add_edge(START, 'create_outline')
 graph.add_edge('create_outline', 'create_blog')
@@ -96,7 +96,7 @@ def evaluate_blog():
             'outline': outline
         }
         
-        # Call the renamed evaluation function
+        
         final_state = evaluate_blog_content(initial_state)
         
         return jsonify({
